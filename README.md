@@ -109,32 +109,31 @@ Cambiar volumen del juego con confirmación sonora.
 ```
 CS2-AUTOEXEC
 │
-├─ assets
-│  └─ banner.png
+├ assets
+│  └ banner.png
 │
-├─ CFG
-│  ├─ dynamic_hud.cfg
-│  └─ practicacs2.cfg
+├ configs
+│  ├ core.cfg
+│  ├ crosshair.cfg
+│  ├ viewmodel.cfg
+│  ├ radar.cfg
+│  ├ audio.cfg
+│  ├ movement.cfg
+│  ├ binds.cfg
+│  ├ utilities.cfg
+│  ├ kz.cfg
+│  ├ practicacs2.cfg
+│  └ dynamic_hud.cfg
 │
-├─ configs
-│  ├─ core.cfg
-│  ├─ crosshair.cfg
-│  ├─ viewmodel.cfg
-│  ├─ radar.cfg
-│  ├─ audio.cfg
-│  ├─ movement.cfg
-│  ├─ binds.cfg
-│  └─ utilities.cfg
+├ movement
+│  ├ -cj.cfg
+│  ├ +cj.cfg
+│  ├ +lj.cfg
+│  └ jb.cfg
 │
-├─ otag
-│  ├─ -cj.cfg
-│  ├─ +cj.cfg
-│  ├─ +lj.cfg
-│  └─ jb.cfg
-│
-├─ autoexec.cfg
-├─ kz.cfg
-└─ install_cfg.bat
+├ autoexec.cfg
+├ install_cfg.bat
+└ README.md
 ```
 
 ---
