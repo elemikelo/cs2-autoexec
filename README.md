@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/banner.png" alt="CS2 Movement Config" width="900"/>
+</p>
+
+<h1 align="center">CS2 Autoexec & Movement Config</h1>
+
+<p align="center">
+  KZ • Long Jump • Count Jump • Practice configs for Counter-Strike 2
+</p>
+
 # CS2 Autoexec & Movement Config
 
 Configuración avanzada para **Counter-Strike 2** orientada a **KZ / movement / practice**, con instalación automática mediante script.
