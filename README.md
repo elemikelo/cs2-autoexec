@@ -5,7 +5,14 @@
 <h1 align="center">CS2 Autoexec & Movement Config</h1>
 
 <p align="center">
-  KZ • Long Jump • Count Jump • Practice configs for Counter-Strike 2
+  Professional modular config for Counter-Strike 2
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/CS2-config-orange">
+  <img src="https://img.shields.io/badge/movement-KZ%20%7C%20LJ%20%7C%20CJ-blue">
+  <img src="https://img.shields.io/badge/install-autoexec-green">
+  <img src="https://img.shields.io/badge/license-free-lightgrey">
 </p>
 
 ---
@@ -14,11 +21,11 @@
 
 Configuración avanzada para **Counter-Strike 2** orientada a:
 
-* Movement
-* KZ
-* Long Jump
-* Count Jump
-* Practice
+- Movement
+- KZ
+- Long Jump
+- Count Jump
+- Practice
 
 Incluye una **configuración modular profesional**, con instalación automática mediante script.
 
@@ -26,57 +33,63 @@ Incluye una **configuración modular profesional**, con instalación automática
 
 # 🚀 Características
 
-Esta configuración incluye:
-
 ### 🎮 Movement
 
-* Bhop optimizado
-* Scripts de movement
-* Configuración para **KZ / LJ / CJ**
+Configuración optimizada para movement:
+
+- Bhop optimizado
+- Scripts para **Long Jump**
+- Scripts para **Count Jump**
+- Soporte para servidores **KZ**
+
+---
 
 ### ⚙️ Configuración modular
 
-La configuración está dividida en módulos para facilitar su mantenimiento:
+La configuración está dividida en módulos independientes para mantener el proyecto limpio y escalable.
 
-* `core`
-* `crosshair`
-* `viewmodel`
-* `radar`
-* `audio`
-* `movement`
-* `binds`
-* `utilities`
+Módulos incluidos:
 
-Esto permite mantener la configuración **limpia, profesional y fácil de modificar**.
+core
+crosshair
+viewmodel
+radar
+audio
+movement
+binds
+utilities
+
+
+Esto permite modificar partes específicas de la configuración sin afectar al resto.
 
 ---
 
 ### 📸 Photo Mode
 
-Modo especial para capturas y clips:
+Modo especial para capturas y clips.
 
-* Oculta HUD
-* Ajusta gamma
-* Aplica desenfoque
-* Cambia viewmodel
+Incluye:
+
+- HUD oculto
+- Ajuste de gamma
+- Desenfoque de fondo
+- Cambio de viewmodel
 
 Comando en consola:
 
-```
 photo
-```
+
 
 ---
 
 ### 🔇 Clutch Mute
 
-Mutea automáticamente el voice chat para concentrarte en clutch.
+Permite silenciar automáticamente el voice chat para concentrarte durante clutch.
 
 Tecla:
 
-```
 Right ALT
-```
+
 
 ---
 
@@ -86,9 +99,8 @@ Drop rápido de C4 para pasarla a compañeros.
 
 Tecla:
 
-```
 J
-```
+
 
 ---
 
@@ -97,87 +109,84 @@ J
 Cambiar volumen del juego con confirmación sonora.
 
 | Tecla | Volumen |
-| ----- | ------- |
-| F4    | Bajo    |
-| F5    | Medio   |
-| F6    | Alto    |
+|-----|-----|
+| F4 | Bajo |
+| F5 | Medio |
+| F6 | Alto |
 
 ---
 
 # 📂 Estructura del proyecto
 
-```
 CS2-AUTOEXEC
 │
 ├ assets
-│  └ banner.png
+│ └ banner.png
 │
-├ configs
-│  ├ core.cfg
-│  ├ crosshair.cfg
-│  ├ viewmodel.cfg
-│  ├ radar.cfg
-│  ├ audio.cfg
-│  ├ movement.cfg
-│  ├ binds.cfg
-│  ├ utilities.cfg
-│  ├ kz.cfg
-│  ├ practicacs2.cfg
-│  └ dynamic_hud.cfg
+├ config
+│ ├ core.cfg
+│ ├ crosshair.cfg
+│ ├ viewmodel.cfg
+│ ├ radar.cfg
+│ ├ audio.cfg
+│ ├ movement.cfg
+│ ├ binds.cfg
+│ ├ utilities.cfg
+│ ├ kz.cfg
+│ ├ practicacs2.cfg
+│ └ dynamic_hud.cfg
 │
 ├ movement
-│  ├ -cj.cfg
-│  ├ +cj.cfg
-│  ├ +lj.cfg
-│  └ jb.cfg
+│ ├ -cj.cfg
+│ ├ +cj.cfg
+│ ├ +lj.cfg
+│ └ jb.cfg
 │
 ├ autoexec.cfg
 ├ install_cfg.bat
 └ README.md
-```
+
 
 ---
 
 # 📄 Archivos principales
 
-| Archivo         | Descripción                                         |
-| --------------- | --------------------------------------------------- |
-| autoexec.cfg    | Configuración principal cargada al iniciar el juego |
-| core.cfg        | Configuración básica del cliente                    |
-| crosshair.cfg   | Configuración de la mira                            |
-| viewmodel.cfg   | Posición del arma                                   |
-| radar.cfg       | Configuración del radar                             |
-| audio.cfg       | Ajustes de sonido                                   |
-| movement.cfg    | Configuración de movimiento                         |
-| binds.cfg       | Binds principales                                   |
-| utilities.cfg   | Photo mode, clutch mute y utilidades                |
-| kz.cfg          | Configuración KZ                                    |
-| practicacs2.cfg | Configuración de práctica                           |
-| dynamic_hud.cfg | HUD dinámico                                        |
+| Archivo | Descripción |
+|------|------|
+| autoexec.cfg | Configuración principal cargada al iniciar el juego |
+| core.cfg | Configuración básica del cliente |
+| crosshair.cfg | Configuración de la mira |
+| viewmodel.cfg | Posición del arma |
+| radar.cfg | Configuración del radar |
+| audio.cfg | Ajustes de sonido |
+| movement.cfg | Configuración de movimiento |
+| binds.cfg | Binds principales |
+| utilities.cfg | Photo mode, clutch mute y utilidades |
+| kz.cfg | Configuración para servidores KZ |
+| practicacs2.cfg | Configuración de práctica |
+| dynamic_hud.cfg | HUD dinámico |
 
 ---
 
 # ⚡ Instalación automática (recomendado)
 
-1. Descarga el repositorio
+1️⃣ Descarga el repositorio
 
-```
 git clone https://github.com/TU_USUARIO/cs2-autoexec
-```
+
 
 o descarga el **ZIP**.
 
-2. Ejecuta:
+2️⃣ Ejecuta:
 
-```
 install_cfg.bat
-```
+
 
 El instalador:
 
-* detectará automáticamente la carpeta de CS2
-* copiará todos los archivos necesarios
-* instalará la configuración completa
+- detecta automáticamente la carpeta de configuración de CS2
+- copia todos los archivos `.cfg` del proyecto
+- instala la configuración completa automáticamente
 
 ---
 
@@ -189,42 +198,21 @@ El instalador:
 4. Propiedades
 5. En **Opciones de lanzamiento** añade:
 
-```
 +exec autoexec.cfg
-```
+
 
 ---
 
 # 🛠 Instalación manual
 
-Ve a:
+Si prefieres instalar manualmente:
 
-```
+1️⃣ Ve a la carpeta:
+
 Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
-```
 
-Copia dentro:
 
-```
-autoexec.cfg
-kz.cfg
-practicacs2.cfg
-dynamic_hud.cfg
-
-core.cfg
-crosshair.cfg
-viewmodel.cfg
-radar.cfg
-audio.cfg
-movement.cfg
-binds.cfg
-utilities.cfg
-
-+cj.cfg
--cj.cfg
-+lj.cfg
-jb.cfg
-```
+2️⃣ Copia dentro **todos los archivos `.cfg` del proyecto**.
 
 ---
 
@@ -232,22 +220,21 @@ jb.cfg
 
 Dentro del juego puedes ejecutar:
 
-```
-exec kz
 practice
+exec kz
 photo
 hud
-```
+
 
 ---
 
 # 🧠 Recomendado para
 
-* KZ players
-* Movement practice
-* Long Jump training
-* Count Jump practice
-* Private servers
+- KZ players
+- Movement practice
+- Long Jump training
+- Count Jump practice
+- Private servers
 
 ---
 
@@ -255,12 +242,12 @@ hud
 
 Si el repositorio recibe cambios:
 
-1. Descarga la nueva versión
-2. Ejecuta nuevamente:
+1️⃣ Descarga la nueva versión
 
-```
+2️⃣ Ejecuta nuevamente:
+
 install_cfg.bat
-```
+
 
 ---
 
