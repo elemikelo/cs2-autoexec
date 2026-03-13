@@ -8,18 +8,99 @@
   KZ • Long Jump • Count Jump • Practice configs for Counter-Strike 2
 </p>
 
+---
+
 # CS2 Autoexec & Movement Config
 
-Configuración avanzada para **Counter-Strike 2** orientada a **KZ / movement / practice**, con instalación automática mediante script.
+Configuración avanzada para **Counter-Strike 2** orientada a:
 
-Incluye binds y configuraciones para:
-
+* Movement
 * KZ
 * Long Jump
 * Count Jump
-* Practice tools
-* HUD dinámico
-* Configuración base (`autoexec`)
+* Practice
+
+Incluye una **configuración modular profesional**, con instalación automática mediante script.
+
+---
+
+# 🚀 Características
+
+Esta configuración incluye:
+
+### 🎮 Movement
+
+* Bhop optimizado
+* Scripts de movement
+* Configuración para **KZ / LJ / CJ**
+
+### ⚙️ Configuración modular
+
+La configuración está dividida en módulos para facilitar su mantenimiento:
+
+* `core`
+* `crosshair`
+* `viewmodel`
+* `radar`
+* `audio`
+* `movement`
+* `binds`
+* `utilities`
+
+Esto permite mantener la configuración **limpia, profesional y fácil de modificar**.
+
+---
+
+### 📸 Photo Mode
+
+Modo especial para capturas y clips:
+
+* Oculta HUD
+* Ajusta gamma
+* Aplica desenfoque
+* Cambia viewmodel
+
+Comando en consola:
+
+```
+photo
+```
+
+---
+
+### 🔇 Clutch Mute
+
+Mutea automáticamente el voice chat para concentrarte en clutch.
+
+Tecla:
+
+```
+Right ALT
+```
+
+---
+
+### 💣 C4 Quick Drop
+
+Drop rápido de C4 para pasarla a compañeros.
+
+Tecla:
+
+```
+J
+```
+
+---
+
+### 🔊 Control rápido de volumen
+
+Cambiar volumen del juego con confirmación sonora.
+
+| Tecla | Volumen |
+| ----- | ------- |
+| F4    | Bajo    |
+| F5    | Medio   |
+| F6    | Alto    |
 
 ---
 
@@ -28,9 +109,22 @@ Incluye binds y configuraciones para:
 ```
 CS2-AUTOEXEC
 │
+├─ assets
+│  └─ banner.png
+│
 ├─ CFG
 │  ├─ dynamic_hud.cfg
-│  └─ practicas2.cfg
+│  └─ practicacs2.cfg
+│
+├─ configs
+│  ├─ core.cfg
+│  ├─ crosshair.cfg
+│  ├─ viewmodel.cfg
+│  ├─ radar.cfg
+│  ├─ audio.cfg
+│  ├─ movement.cfg
+│  ├─ binds.cfg
+│  └─ utilities.cfg
 │
 ├─ otag
 │  ├─ -cj.cfg
@@ -43,24 +137,30 @@ CS2-AUTOEXEC
 └─ install_cfg.bat
 ```
 
-### Archivos principales
+---
 
-| Archivo           | Descripción                                         |
-| ----------------- | --------------------------------------------------- |
-| `autoexec.cfg`    | Configuración principal cargada al iniciar el juego |
-| `kz.cfg`          | Configuración específica para KZ                    |
-| `dynamic_hud.cfg` | HUD dinámico para prácticas                         |
-| `practicas2.cfg`  | Configuración de práctica                           |
-| `+lj.cfg`         | Script para Long Jump                               |
-| `+cj.cfg`         | Script para Count Jump                              |
-| `-cj.cfg`         | Reset del Count Jump                                |
-| `jb.cfg`          | Script adicional de movimiento                      |
+# 📄 Archivos principales
+
+| Archivo         | Descripción                                         |
+| --------------- | --------------------------------------------------- |
+| autoexec.cfg    | Configuración principal cargada al iniciar el juego |
+| core.cfg        | Configuración básica del cliente                    |
+| crosshair.cfg   | Configuración de la mira                            |
+| viewmodel.cfg   | Posición del arma                                   |
+| radar.cfg       | Configuración del radar                             |
+| audio.cfg       | Ajustes de sonido                                   |
+| movement.cfg    | Configuración de movimiento                         |
+| binds.cfg       | Binds principales                                   |
+| utilities.cfg   | Photo mode, clutch mute y utilidades                |
+| kz.cfg          | Configuración KZ                                    |
+| practicacs2.cfg | Configuración de práctica                           |
+| dynamic_hud.cfg | HUD dinámico                                        |
 
 ---
 
 # ⚡ Instalación automática (recomendado)
 
-1. Descarga o clona el repositorio
+1. Descarga el repositorio
 
 ```
 git clone https://github.com/TU_USUARIO/cs2-autoexec
@@ -74,17 +174,15 @@ o descarga el **ZIP**.
 install_cfg.bat
 ```
 
-3. El instalador:
+El instalador:
 
-* detectará automáticamente tu carpeta `cfg`
+* detectará automáticamente la carpeta de CS2
 * copiará todos los archivos necesarios
-* sobrescribirá configuraciones anteriores si existen
+* instalará la configuración completa
 
 ---
 
 # ⚙️ Activar autoexec en Steam
-
-Para que el archivo se cargue automáticamente:
 
 1. Abre **Steam**
 2. Ve a tu biblioteca
@@ -100,21 +198,29 @@ Para que el archivo se cargue automáticamente:
 
 # 🛠 Instalación manual
 
-Si prefieres hacerlo manualmente:
-
-1. Ve a tu carpeta de configuración de CS2
+Ve a:
 
 ```
 Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ```
 
-2. Copia dentro:
+Copia dentro:
 
 ```
 autoexec.cfg
 kz.cfg
+practicacs2.cfg
 dynamic_hud.cfg
-practicas2.cfg
+
+core.cfg
+crosshair.cfg
+viewmodel.cfg
+radar.cfg
+audio.cfg
+movement.cfg
+binds.cfg
+utilities.cfg
+
 +cj.cfg
 -cj.cfg
 +lj.cfg
@@ -123,14 +229,15 @@ jb.cfg
 
 ---
 
-# 🎮 Uso
+# 🎮 Comandos útiles
 
-Una vez dentro del juego puedes ejecutar configuraciones manualmente:
+Dentro del juego puedes ejecutar:
 
 ```
 exec kz
-exec practicas2
-exec dynamic_hud
+practice
+photo
+hud
 ```
 
 ---
@@ -150,7 +257,7 @@ exec dynamic_hud
 Si el repositorio recibe cambios:
 
 1. Descarga la nueva versión
-2. Ejecuta nuevamente
+2. Ejecuta nuevamente:
 
 ```
 install_cfg.bat
@@ -162,10 +269,10 @@ install_cfg.bat
 
 **elemikelo**
 
-CS2 movement configs.
+Configuración avanzada para Counter-Strike 2.
 
 ---
 
 # 📄 Licencia
 
-Uso libre para **práctica y aprendizaje**.
+Uso libre para **práctica, aprendizaje y movement**.
