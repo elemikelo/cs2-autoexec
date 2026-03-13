@@ -1,34 +1,19 @@
-```{=html}
 <p align="center">
-```
-`<img src="assets/banner.png" alt="CS2 Movement Config" width="900"/>`{=html}
-```{=html}
+  <img src="assets/banner.png" width="100%">
 </p>
-```
-```{=html}
-<h1 align="center">
-```
-CS2 Autoexec & Movement Config
-```{=html}
-</h1>
-```
-```{=html}
+
+<h1 align="center">CS2 Autoexec & Movement Config</h1>
+
 <p align="center">
-```
-Professional modular config for Counter‑Strike 2
-```{=html}
+Professional modular config for Counter-Strike 2
 </p>
-```
-```{=html}
+
 <p align="center">
-```
-`<img src="https://img.shields.io/badge/CS2-config-orange">`{=html}
-`<img src="https://img.shields.io/badge/movement-KZ%20%7C%20LJ%20%7C%20CJ-blue">`{=html}
-`<img src="https://img.shields.io/badge/install-autoexec-green">`{=html}
-`<img src="https://img.shields.io/badge/license-free-lightgrey">`{=html}
-```{=html}
+  <img src="https://img.shields.io/badge/CS2-config-orange"/>
+  <img src="https://img.shields.io/badge/movement-KZ%20%7C%20LJ%20%7C%20CJ-blue"/>
+  <img src="https://img.shields.io/badge/install-autoexec-green"/>
+  <img src="https://img.shields.io/badge/license-free-lightgrey"/>
 </p>
-```
 
 ------------------------------------------------------------------------
 
