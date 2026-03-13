@@ -1,7 +1,6 @@
 @echo off
-setlocal enabledelayedexpansion
+setlocal
 
-set "FILENAME=autoexec.cfg"
 set "DEFAULT_PATH=C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
 
 echo ===========================================
@@ -9,62 +8,58 @@ echo    CS2 AUTOEXEC INSTALLER - elemikelo
 echo ===========================================
 echo.
 
-:: Comprobar si el archivo autoexec existe en la carpeta actual
-if not exist "%FILENAME%" (
-    echo [ERROR] No se encuentra %FILENAME% en esta carpeta.
-    pause
-    exit /b
-)
-
-:: Verificar ruta por defecto
+:: Detectar ruta automáticamente
 if exist "%DEFAULT_PATH%" (
     set "FINAL_PATH=%DEFAULT_PATH%"
-    echo [INFO] Ruta por defecto encontrada.
+    echo [INFO] Ruta de CS2 encontrada.
 ) else (
-    echo [?] No se encontro la ruta por defecto de Steam.
-    set /p "FINAL_PATH= [>] Por favor, pega la ruta de tu carpeta /cfg: "
-)
-
-:: Confirmar y copiar
-echo.
-echo [!] Se va a copiar la configuracion en: "%FINAL_PATH%"
-set /p "CONFIRM= ¿Estas seguro? (S/N): "
-
-if /i "%CONFIRM%" neq "S" (
-    echo [!] Instalacion cancelada.
-    pause
-    exit /b
+    echo [WARNING] No se encontro la ruta automaticamente.
+    set /p "FINAL_PATH=Introduce la ruta de tu carpeta cfg: "
 )
 
 echo.
+echo Instalando configuracion en:
+echo %FINAL_PATH%
+echo.
+
+:: Crear carpeta si no existe
+if not exist "%FINAL_PATH%" (
+    mkdir "%FINAL_PATH%"
+)
+
 echo Copiando archivos...
 
 :: Copiar autoexec
-copy /y "%FILENAME%" "%FINAL_PATH%\%FILENAME%" >nul
-
-:: Copiar kz.cfg si existe
-if exist "kz.cfg" (
-    copy /y "kz.cfg" "%FINAL_PATH%\kz.cfg" >nul
+if exist "autoexec.cfg" (
+    copy /y "autoexec.cfg" "%FINAL_PATH%" >nul
 )
 
-:: Copiar CFG configs
+:: Copiar kz
+if exist "kz.cfg" (
+    copy /y "kz.cfg" "%FINAL_PATH%" >nul
+)
+
+:: Copiar configs carpeta CFG
 if exist "CFG" (
     for %%f in (CFG\*.cfg) do (
-        copy /y "%%f" "%FINAL_PATH%\%%~nxf" >nul
+        copy /y "%%f" "%FINAL_PATH%" >nul
     )
 )
 
-:: Copiar configs de otag
+:: Copiar configs carpeta otag
 if exist "otag" (
     for %%f in (otag\*.cfg) do (
-        copy /y "%%f" "%FINAL_PATH%\%%~nxf" >nul
+        copy /y "%%f" "%FINAL_PATH%" >nul
     )
 )
 
 echo.
 echo ===========================================
-echo    DONE! Archivos copiados con exito.
-echo    Recuerda poner +exec autoexec.cfg en Steam.
+echo      INSTALACION COMPLETADA
 echo ===========================================
+echo.
+echo Recuerda añadir en Steam:
+echo +exec autoexec.cfg
+echo.
 
 pause
