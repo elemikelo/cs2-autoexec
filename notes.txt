@@ -1,0 +1,11 @@
+- Sensibilidad en Window 6 sin acelaración.
+
+- Wooting perfiles
+    60he+ v1 = d39440e62e806463da5663bc3ffa5521068c
+    60he + v2 = 1596b5a24a211008e24fcd516c3cb8c61a38
+
+- Ratón superstrike
+    Actuacion 2  4
+    Activador 1  2
+    Háptica   3  3
+    800 DPI 4000hz
